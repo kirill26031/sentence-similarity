@@ -51,7 +51,7 @@ def clean_dataset(dataset, stemmed_words):
             unknown_words = unknown_words.union(unknown)
         cleaned_sentences_1.append(cleaned_sentence1_and2[0])
         cleaned_sentences_2.append(cleaned_sentence1_and2[1])
-        scores.append(dataset[i]['score'])
+        scores.append(dataset[i]['score'] / 2 - 1)
 
     cleaned_df = pd.DataFrame({
         "sentence1": cleaned_sentences_1,
