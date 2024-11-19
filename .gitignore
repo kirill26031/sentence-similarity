@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 
 dataset-sts/
+models/
+tmp_trainer/
